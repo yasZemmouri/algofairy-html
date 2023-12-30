@@ -1,7 +1,7 @@
 <?php
     include '../includes/config.php';
     // snippet variable 
-    $title = "page title";
+    $title = "episode #1";
 ?>
 <!DOCTYPE html>
 <html lang="<?=$language?>">
@@ -31,7 +31,17 @@
 </head>
 
 <body>
-    hello world
+    <?php
+        include '../includes/header.php';
+    ?>
+   <main></main>
+    <?php
+        include '../includes/footer.php';
+    ?>
+    <!-- Vendor js file -->
+    <script src = <?php $bootstrapJS ?>></script>
+    <!-- Main js File -->
+    <script src= <?php $mainJS?>></script>
 </body>
 
 </html>

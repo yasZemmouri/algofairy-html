@@ -1,0 +1,9 @@
+footer {
+    .container-xl {
+        min-height: $footer-height;
+        font-size: 1.2rem;
+        color: grey;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

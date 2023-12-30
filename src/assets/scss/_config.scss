@@ -1,0 +1,21 @@
+// Variables 
+//Colors
+$primary-color: #0077C9;
+$background-color: linear-gradient(to bottom right, rgb(255, 255, 255), #d0d2d4);
+// Font 
+$primary-font: 'Lora', sans-serif;
+//Dimentions
+$nav-height: 55px;
+$footer-height: 70px;
+
+// Resets 
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root {
+    box-sizing: border-box;
+}
