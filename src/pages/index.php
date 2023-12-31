@@ -5,6 +5,8 @@
     header("Expires: 0"); // Proxies
 
     include '../includes/config.php';
+    include '../includes/button_function.php';
+
     // snippet variable 
     $title = "episode #1";
     $metaContent="Google is now saying that the maximum length for a snippet in search results is 320 characters including spaces & snippet features, like the Published Date. I more often recommend a length of 300 characters for a Meta Description"
