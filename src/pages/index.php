@@ -1,7 +1,13 @@
 <?php
+    // Prevent caching for this PHP file
+    header("Cache-Control: no-cache, no-store, must-revalidate"); // HTTP 1.1
+    header("Pragma: no-cache"); // HTTP 1.0
+    header("Expires: 0"); // Proxies
+
     include '../includes/config.php';
     // snippet variable 
     $title = "episode #1";
+    $metaContent="Google is now saying that the maximum length for a snippet in search results is 320 characters including spaces & snippet features, like the Published Date. I more often recommend a length of 300 characters for a Meta Description"
 ?>
 <!DOCTYPE html>
 <html lang="<?=$language?>">
@@ -15,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- snippet variable -->
     <meta name="description"
-        content="Google is now saying that the maximum length for a snippet in search results is 320 characters including spaces & snippet features, like the Published Date. I more often recommend a length of 300 characters for a Meta Description">
+        content="<?= $metaContent ?>">
 
     <!--===== Favicons =====-->
     <link rel="icon" type="image/x-icon" href= "<?= $faviconUrl ?>">
@@ -31,10 +37,15 @@
 </head>
 
 <body>
+    <!-- Header -->
     <?php
         include '../includes/header.php';
     ?>
-   <main></main>
+    <!-- This should be assigned dynamically?  -->
+   <main id="home">
+
+   </main>
+   <!-- Footer -->
     <?php
         include '../includes/footer.php';
     ?>
