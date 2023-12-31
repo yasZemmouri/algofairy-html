@@ -43,7 +43,8 @@
     ?>
     <!-- This should be assigned dynamically?  -->
    <main id="home">
-
+        <h1>HTML</h1>
+        <h2>Episode 01</h2>
    </main>
    <!-- Footer -->
     <?php

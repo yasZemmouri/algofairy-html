@@ -1,5 +1,6 @@
 @import 'config';
 @import 'header';
+@import 'home';
 
 
 // General
@@ -22,4 +23,10 @@ body {
 
 main {
     flex: 1 1;
+}
+
+h2 {
+    font-style: italic;
+    margin-bottom: 30px;
+    text-transform: capitalize;
 }
