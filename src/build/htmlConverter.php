@@ -1,5 +1,5 @@
 <?php
-    // Define the source and destination directories
+    // Define the source and destination directories.
     $source_dir = '../pages'; // The directory path where your PHP files are located
     $dest_dir = '../../dist';
     // if (!is_dir($dest_dir)) {
