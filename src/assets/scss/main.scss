@@ -1,9 +1,15 @@
-// General
+@import 'config';
+@import 'header';
 
+
+// General
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    //maxin?
+    align-items: center;
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), #d0d2d4);
     // background-image: linear-gradient(to bottom right, rgb(255, 255, 255), #d0d2d4);
     // background-repeat: no-repeat;
     // background-size: cover;

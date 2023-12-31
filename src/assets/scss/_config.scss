@@ -10,7 +10,7 @@
 //$nav-height: 55px;
 
 // Resets 
-/** {
+* {
     margin: 0;
     border: 0;
     padding: 0;
@@ -26,6 +26,7 @@ a {
     text-decoration: none;
 }
 
+/*
 @function set-text-color($color) {
 
     //where this lightness function come from?
@@ -36,4 +37,6 @@ a {
     @else {
         @return white;
     }
-}*/
+}
+
+*/
