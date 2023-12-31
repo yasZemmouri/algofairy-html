@@ -1,3 +1,52 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*
+@function set-text-color($color) {
+
+    //where this lightness function come from?
+    @if(lightness($color)>40%) {
+        @return black;
+    }
+
+    @else {
+        @return white;
+    }
+}
+
+*/
+header {
+  padding: 50px;
+}
+header img {
+  width: 100px;
+}
+
+#home {
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#home h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
 .button01 {
   background: linear-gradient(to bottom, #40bce9 5%, #016082 100%);
   background-color: #33bdef;
@@ -21,4 +70,28 @@
 .button01:active {
   position: relative;
   top: 1px;
+}
+
+footer {
+  padding: 30px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(to bottom right, rgb(255, 255, 255), #d0d2d4);
+}
+
+main {
+  flex: 1 1;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 60px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
 }/*# sourceMappingURL=main.css.map */

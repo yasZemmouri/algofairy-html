@@ -1,38 +1,39 @@
 # UI Library Documentation
 
 ## Introduction
-This UI library serves as a centralized repository for reusable components intended to streamline the development of consistent and cohesive user interfaces within our projects.
+This UI library serves as a centralized repository for reusable components aimed at streamlining the development of consistent and cohesive user interfaces across our projects.
 
 ## Goals and Objectives
-- **Reusability:** Encourage the reuse of standardized UI components across the project.
-- **Consistency:** Ensure consistency in design and functionality throughout the application.
-- **Efficiency:** Speed up the development process by providing pre-built and tested UI elements.
+- **Reusability:** Promote the use of standardized UI components across projects for enhanced efficiency.
+- **Efficiency:** Accelerate development by offering pre-built and tested UI elements.
 
 ## Library Functionality
 ### Component Scope
-- Includes a range of components such as buttons, cards, forms, etc.
-- Each component is designed for easy integration and customization.
+- Encompasses various components like buttons, cards, forms, etc.
+- Each component is tailored for easy integration and customization.
 
 ## How it Works
 ### Component Structure
-- Components are organized into separate folders, each containing SCSS and php templates.
-- SCSS files follow a structured naming convention for easy identification and modification.
-- To visualize the components run the showcase.php file http://localhost/algofairy-html/src/assets/ui-library/showcase.php 
+- Components are organized in folders, each containing SCSS and PHP templates.
+- SCSS files adhere to a structured naming convention for easy identification and modification.
+- View components via the showcase.php file: [http://localhost/algofairy-html/src/assets/ui-library/showcase.php](http://localhost/algofairy-html/src/assets/ui-library/showcase.php)
 
 ## Implementation Guidelines
 ### Integration Instructions
-1. **Run showcase.php:** Run showcase.php in the browser to visualize the components by folder name.
-2. **Include Components:** Go to the designed folder and copy the php file in src/includes and link include it in the page that is using it. Copy the scss file into the src/assets/scss and import it in the main.scss file  .
-3. **Customize (if needed):** Modify variables or mixins to customize component styles.
+1. **Explore Components:** Use showcase.php to visualize components categorized by folder names.
+2. **Include PHP Components:** Copy the PHP file from the desired folder to `src/includes` and include it in the respective page.
+3. **Add SCSS Files:** Copy the SCSS file into `src/assets/scss` and import it into `main.scss`.
+4. **Customization:** Modify variables or mixins for component styling if needed.
+5. **Updating Library Components:** When adding a new component, use the command `sass _style.scss style.css` to generate the new CSS. The leading underscore (_) ignores the file by the live Sass compiler, preventing its copying to `dist/assets/css`.
 
 ### Code Examples
 #### Button Component Integration
 ```scss
 // Import button component SCSS
-@import 'path/to/ui-library/buttons/_button';
+@import 'path/to/button/_button'; // Update with the correct path
 
 // Your custom styles or overrides
 ...
 
 // HTML implementation
-<button class="button">Click Me</button>
+<button class="button">Click Me</button> // Implement your button markup here
