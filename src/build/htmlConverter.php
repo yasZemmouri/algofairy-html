@@ -1,11 +1,12 @@
 <?php
+    include '../includes/config.php';
     // Define the source and destination directories.
     $source_dir = '../pages'; // The directory path where your PHP files are located
-    $dest_dir = '../../dist';
-    // if (!is_dir($dest_dir)) {
-    //     //0777 is the permission code it means give read write and execute to all the users
-    //     mkdir($dest_dir, 0777, true);
-    //   }
+    $dest_dir = $distPath;
+    if (!is_dir($dest_dir)) {
+        //0777 is the permission code it means give read write and execute to all the users
+        mkdir($dest_dir, 0777, true);
+      }
     // Get all the PHP files in the source directory
     //The glob function returns an array of file names or directories that match a specified pattern 1
     // this is one argument we're looking for source_dir/something.php
