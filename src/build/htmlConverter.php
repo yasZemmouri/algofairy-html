@@ -8,6 +8,7 @@
     //   }
     // Get all the PHP files in the source directory
     //The glob function returns an array of file names or directories that match a specified pattern 1
+    // this is one argument we're looking for source_dir/something.php
     $files = glob($source_dir . '/*.php');
     //this will return an array with elements like: pages/index.php etc
     // Loop through each file
