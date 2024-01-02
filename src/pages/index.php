@@ -35,7 +35,7 @@
     <!-- Vendor CSS Files -->
     <link rel="stylesheet" href= "<?= $bootstrapCSS ?>" >
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="<?= $mainCSS ?>" >
+    <link rel="stylesheet" href= "<?= $mainCSS ?>" >
 </head>
 
 <body>
