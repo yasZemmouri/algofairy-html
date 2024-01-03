@@ -32,5 +32,5 @@ foreach ($imageFiles as $image) {
         }
     }
 }
-echo "<p>File copy process Completed</p>";
+echo "<p>File copy process completed.</p>";
 ?>

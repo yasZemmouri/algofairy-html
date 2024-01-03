@@ -1,5 +1,6 @@
 <?php
     include '../includes/config.php';
+    echo "<p>Generating HTML files in dist...</p>";
     // Define the source and destination directories.
     $source_dir = '../pages'; // The directory path where your PHP files are located
     $dest_dir = $distPath;
@@ -36,5 +37,8 @@
         $htmlContent = str_replace('.php', '.html', $htmlContent); // Convert PHP links to HTML links
 
         file_put_contents($htmlFilePath, $htmlContent);
+        echo "<p>$filename.html generated.</p>";
+
     }
+    echo "<p>End of HTML files generation.</p>";
 ?>

@@ -1,6 +1,7 @@
 <?php
 //Update the path links on html documents to match the dist structure.
-    include '../includes/config.php'; 
+    include '../includes/config.php';
+    echo "<p>Updating path links on HTML pages...";
     //define the directory path
     $htmlFilesDirctory = $distPath;
     // get all html files in the directory in form of array 
@@ -33,4 +34,6 @@
         //save the updated content back to the html file
         file_put_contents($htmlFile, $updatedContent);
     }
+    echo "<p>Path links on HTML pages update process completed.";
+
 ?>
