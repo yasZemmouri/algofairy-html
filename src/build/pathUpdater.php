@@ -13,20 +13,20 @@
         // To use a variable inside a string you should use "" double quotes they don't work in '' single quotes 
         //the space after href= " is important. Should I use both href= " and href=" through OR or regular expressions?
         $updatedContent = str_replace([
-                "href= \"$mainCSS\"",
+                $mainCSS_from_src,
 
                                
                 // "href= \"$faviconUrl\"",
                 // "href= \"$appleTouchIconUrl\"",
-                "../assets/img/selected/",
+                $imgPath_src,
                 // "href= \"$imgPath_src\"",
             ],
             [
-                'href= "assets/css/main.css"',
+                $mainCSS_in_dist,
                 // "href= \"assets/img/$faviconIco\"",
                 // "href= \"assets/img/$appleTouchImg\"",
                 // "href= \"$imgPath_dist\"",
-                "assets/img/"
+                $imgPath_dist_in_dist,
             ], 
             $content
         );

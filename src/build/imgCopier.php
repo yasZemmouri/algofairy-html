@@ -4,7 +4,7 @@
     echo "<p> Copying images in progress...</p>";
 
     $srcDir= $imgPath_src;
-    $distDir= $imgPath_dist;
+    $distDir= $imgPath_dist_from_src;
     // Create the destination directory if it doesn't exist
     // file_exists() can check both the existance of files and directories.
     if (!file_exists($distDir)) {
