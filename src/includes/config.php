@@ -8,6 +8,7 @@ $siteName="AlgoCourses";
 
 $distPath = "../../dist/";
 $imgPath_src = "../assets/img/selected/";
+$imgPath_dist=$distPath . 'assets/img/';
 $faviconIco = "favicon-32-2.ico";
 $appleTouchImg = "favicon-160.png";
 //Favicons & Icons

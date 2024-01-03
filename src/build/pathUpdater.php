@@ -14,13 +14,19 @@
         //the space after href= " is important. Should I use both href= " and href=" through OR or regular expressions?
         $updatedContent = str_replace([
                 "href= \"$mainCSS\"",
-                "href= \"$faviconUrl\"",
-                "href= \"$appleTouchIconUrl\"",
+
+                               
+                // "href= \"$faviconUrl\"",
+                // "href= \"$appleTouchIconUrl\"",
+                "../assets/img/selected/",
+                // "href= \"$imgPath_src\"",
             ],
             [
                 'href= "assets/css/main.css"',
-                "href= \"assets/img$faviconIco\"",
-                "href= \"assets/img$appleTouchImg\"",
+                // "href= \"assets/img/$faviconIco\"",
+                // "href= \"assets/img/$appleTouchImg\"",
+                // "href= \"$imgPath_dist\"",
+                "assets/img/"
             ], 
             $content
         );
