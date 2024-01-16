@@ -28,8 +28,27 @@ a {
 }
 
 */
+body {
+  min-height: 100vh;
+}
+
 header {
-  padding: 50px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+}
+
+header {
+  padding: 20px;
+  align-items: center;
 }
 header img {
   width: 100px;
@@ -38,9 +57,6 @@ header img {
 #home {
   font-size: 40px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 #home h1 {
   font-size: 2em;
@@ -72,21 +88,30 @@ header img {
   top: 1px;
 }
 
+.carousel-item {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 footer {
-  padding: 30px;
+  padding: 10px;
+}
+footer .buttons {
+  text-align: center;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
   align-items: center;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-image: linear-gradient(to bottom right, rgb(255, 255, 255), #d0d2d4);
 }
 
 main {
-  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 h2 {
@@ -94,4 +119,28 @@ h2 {
   font-size: 60px;
   margin-bottom: 30px;
   text-transform: capitalize;
+}
+
+.main-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.main-carousel h1 {
+  margin-bottom: 40px;
+}
+.main-carousel h2 {
+  margin-top: 40px;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
 }/*# sourceMappingURL=main.css.map */

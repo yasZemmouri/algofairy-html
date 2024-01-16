@@ -1,0 +1,21 @@
+body {
+    min-height: 100vh;
+}
+
+main {
+    // height: 100vh;
+}
+
+header {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+}

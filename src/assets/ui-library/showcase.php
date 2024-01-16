@@ -18,6 +18,8 @@
         include './button01/button_function.php';
         echo createButton01();
     ?>
+    <h2>Carousels</h2>
+    <h3>Carousel 01</h3>
     <?php
         include './carousel01/carousel01.php';
     ?>
